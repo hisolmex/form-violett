@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
+* {
+    box-sizing: border-box;
+    text-align: center;
+	font-family: 'Inconsolata', monospace;
+}
+body {
+	margin: 0;
+	background-image: url(../img/tlo.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.container {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+.row:before, 
+.row:after {
+    content:"";
+    display: table ;
+    clear:both;
+ }
+ [class*="col-"] {
+    width: 100%;
+    padding: 12px; 
+	float:left;
+}
+.col-1 {
+	width: 8.33%;
+	}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.col-20 {width: 20%;}
+.col-40 {width: 40%;}
+
+h2.h2-form {
+	font-size: 48px;
+	color: white;
+	font-weight: 400;
+}
+.box-main {
+	margin: 0 auto;
+	max-width: 778px;
+	background: none;
+	height: 553px;
+}
+.col-left{
+	width: 39%;
+	/*background: #202020; */
+	height: 553px;
+	background-image: URL(../img/foto.png);
+    background-size: cover;
+    background-position: center;
+}
+.col-right{
+	width: 61%;
+	background: #f1f1f4;
+	height: 553px;
+	position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.box-left {
+    padding-left: 40px;
+	padding-right: 40px;
+}
+p.p-form {
+	font-size: 14px;
+	color: #202020;
+	line-height: 26px;
+	max-width: 291px;
+	font-family: 'Tahoma';
+	text-align: left;
+}
+.form-section{
+	min-height: 650px;
+    background-size: cover;
+    background-position: center;
+}
+.form-group label {
+	color: #a2a2af;
+	font-size: 11px;
+	text-align: left;
+}
+.form-group input {
+	border: none;
+	outline: 0;
+    background: none;
+    padding: 10px 0px;
+	color: #202020;
+	text-align: left;
+	height: 40px;
+	font-size: 16px;
+    width: 100%;
+    border-bottom: 2px solid #dfdfe4;
+}
+.form-group select {
+	border: none;
+	height: 40px;
+	outline: 0;
+    background: none;
+    padding: 10px 0px;
+	color: #202020;
+	text-align: left;
+	font-size: 16px;
+    width: 100%;
+    border-bottom: 2px solid #dfdfe4;
+}
+.form-group input:hover {
+	border-bottom: 2px solid #531fc0;
+}
+.form-group select:hover {
+	border-bottom: 2px solid #531fc0;
+}
+.form-group option {
+    border: none;
+    outline: 0;
+    background: none;
+    padding: 10px 0px;
+    color: #202020;
+    text-align: left;
+    height: 40px;
+    font-size: 16px;
+    width: 100%;
+    border-bottom: 2px solid #dfdfe4;
+}
+.button {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+input.btn2 {
+    background: #6e37e7;
+    color: white;
+    text-transform: uppercase;
+    border: 0;
+	height: 48px;
+	outline: 0;
+    padding: 15px 61px;
+    font-size: 16px;
+}
+.fa {
+	background: #7841f4;
+    color: white;
+    position: relative;
+    left: -8px;
+    padding: 16px;
+    top: 0px;
+}
+.button-box {
+    position: absolute;
+    top: 524px;
+    right: -57px;
+}
+@media (max-width: 940px) {
+	.box-main {
+		margin: 0 auto;
+		width: 722px;
+	}
+}
+
+@media (max-width: 860px) {
+	body {
+		margin: 0;
+		background-image: url(../img/tlo2.png);
+		background-attachment: fixed;
+		background-position: center;
+		background-size: cover;
+	}
+	.box-left {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.col-left{
+		display: none;
+	}
+	.button-box {
+		position: absolute;
+		top: 524px;
+		right: 20px;
+	}
+	.box-main {
+		margin: 0 auto;
+		width: 291px;
+		background: none;
+		height: 553px;
+	}
+	
+	.col-right{
+		width: 291px;
+		margin: 0 auto;
+	}
+	.col-4.options {
+		width: 50%;
+	}
+	.col-8.number {
+		width: 50%;
+	}
+
+}
