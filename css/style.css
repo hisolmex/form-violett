@@ -105,6 +105,7 @@ h2.h2-form {
 	max-width: 778px;
 	background: none;
 	height: 553px;
+	margin-bottom: 80px;
 }
 .col-left{
 	width: 39%;
@@ -130,6 +131,7 @@ h2.h2-form {
 }
 p.p-form {
 	font-size: 14px;
+	margin-left: 12px;
 	color: #202020;
 	line-height: 26px;
 	max-width: 291px;
@@ -175,6 +177,9 @@ p.p-form {
 .form-group input:hover {
 	border-bottom: 2px solid #531fc0;
 }
+.form-group input.border:hover {
+	border: 2px solid #531fc0;
+}
 .form-group select:hover {
 	border-bottom: 2px solid #531fc0;
 }
@@ -192,6 +197,7 @@ p.p-form {
 }
 .button {
     position: relative;
+	height: 48px;
     top: 0;
     bottom: 0;
     left: 0;
@@ -222,6 +228,82 @@ input.border {
     position: absolute;
     top: 524px;
     right: -57px;
+}
+.square-small {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #dfdfe4;
+    background: #f0f0f3;
+    display: inline-block;
+	z-index: 999;
+    position: absolute;
+    top: 17px;
+    left: 48px;
+}
+.square-little {
+    width: 2px;
+    height: 2px;
+    border: 2px solid #dfdfe4;
+    display: none;
+    z-index: 999;
+    position: absolute;
+    top: 22px;
+    left: 53px;
+}
+.square-big {
+    width: 47px;
+    height: 47px;
+    border: 2px solid #dfdfe4;
+    background: none;
+    display: inline-block;
+	z-index: 10;
+}
+.square-box {
+	width: 65px;
+	display: inline-block;
+	position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+.item {
+	margin-bottom: 22px;
+}
+.color1 {
+	width: 78px;
+	border: 2px solid #1cd4a3;
+}
+.color2 {
+	width: 78px;
+	border: 2px solid #531fc0;
+}
+.color3 {
+	width: 78px;
+	border: 2px solid #ffffff;
+}
+
+.gender-box-all {
+    text-align: left;
+	display: block;
+    margin-left: -10px;
+}
+.square-box:hover {
+	cursor: pointer;
+}
+.square-box:hover .square-big {
+	border: 2px solid #1cd4a3;
+}
+.square-box:hover .square-small {
+	border: 2px solid #1cd4a3;
+}
+.square-box:hover .square-little {
+	display: inline-block;
+	border: 2px solid #1cd4a3;
+}
+img.gender-img {
+    position: absolute;
+    top: 10px;
+    left: 24px;
 }
 @media (max-width: 940px) {
 	.box-main {
