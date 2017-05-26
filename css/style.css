@@ -125,6 +125,11 @@ h2.h2-form {
     bottom: 0;
 }
 .box-left {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+.box-rigth {
     padding-left: 40px;
 	padding-right: 40px;
 	padding-top: 20px;
@@ -204,14 +209,88 @@ p.p-form {
 }
 input.btn2 {
     background: #6e37e7;
+	display: inline-block;
+	text-decoration:none;
+	cursor: pointer;
     color: white;
     text-transform: uppercase;
     border: 0;
 	height: 48px;
 	outline: 0;
     padding: 15px 61px;
+	-webkit-appearance: none;
     font-size: 16px;
 }
+input.btn2:hover {
+	background: #8455e9;
+}
+.i1 {
+	width: 78px;
+}
+.i2 {
+	width: 168px;
+}
+.i3 {
+	width: 98px;
+	margin-left: 40px;
+}
+.i4 {
+	width: 78px;
+	margin-left: 40px;
+}
+.i5 {
+	width: 158px;
+}
+.i6 {
+	width: 174px;
+	margin-left: 70px;
+}
+.i7 {
+	width: 168px;
+	margin-left: 70px;
+}
+.i8 {
+	width: 88px;
+}
+.i9 {
+	width: 128px;
+	margin-left: 70px;
+}
+.i10 {
+	width: 228px;
+}
+.i11 {
+	width: 146px;
+}
+.i12 {
+	width: 78px;
+	margin-left: 40px;
+}
+.i13 {
+	width: 118px;
+	margin-left: 70px;
+}
+.i14 {
+	width: 176px;
+	margin-left: 70px;
+}
+.i15 {
+	width: 20px;
+	margin-left: 40px;
+}
+.i16 {
+	width: 80px;
+	margin-left: 40px;
+}
+.i17 {
+	width: 136px;
+	margin-left: 70px;
+}
+.i18 {
+	width: 168px;
+	margin-left: 70px;
+}
+
 input.border {
 	border: 2px solid #dfdfe4;
 	padding: 6px;
@@ -270,15 +349,12 @@ input.border {
 	margin-bottom: 22px;
 }
 .color1 {
-	width: 78px;
 	border: 2px solid #1cd4a3;
 }
 .color2 {
-	width: 78px;
 	border: 2px solid #531fc0;
 }
 .color3 {
-	width: 78px;
 	border: 2px solid #ffffff;
 }
 
@@ -310,6 +386,11 @@ img.gender-img {
 		margin: 0 auto;
 		width: 722px;
 	}
+	.box-rigth {
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-top: 20px;
+	}	
 }
 
 @media (max-width: 860px) {
@@ -342,6 +423,7 @@ img.gender-img {
 	.col-right{
 		width: 291px;
 		margin: 0 auto;
+		 transition-duration:4s;
 	}
 	.col-4.options {
 		width: 50%;
@@ -351,5 +433,18 @@ img.gender-img {
 	}
 	input.border {
 		padding: 0px;
+	}
+}
+@media (max-width: 320px) {
+	.box-main {
+		width: 100%;
+	}
+	.col-right{
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	input.btn2 {
+		padding: 15px 38px;
 	}
 }
